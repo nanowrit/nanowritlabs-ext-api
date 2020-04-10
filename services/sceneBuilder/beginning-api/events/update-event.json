@@ -1,0 +1,11 @@
+{
+    "body": "{\"hook\":\"hello new new hook\",\"backstory\":\"hello even newer backstory\",\"incitingIncident\":\"hello same old incitingIncident\",\"triggerEvent\":\"hello triggerEvent\",\"debate\":\"hello debate\",\"decision\":\"hello decision\",\"threshold\":\"hello threshold\",\"attachment\":\"hello.jpg\"}",
+    "pathParameters": {
+      "id": "a38e9100-54d8-11ea-b8c1-393619323f06"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
