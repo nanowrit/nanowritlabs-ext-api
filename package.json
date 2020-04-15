@@ -1,0 +1,27 @@
+{
+  "name": "nanowritlabs-ext-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanowrit/nanowritlabs-ext-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanowrit/nanowritlabs-ext-api/issues"
+  },
+  "homepage": "https://github.com/nanowrit/nanowritlabs-ext-api#readme",
+  "dependencies": {
+    "aws-xray-sdk": "^2.5.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.656.0",
+    "serverless-bundle": "^1.3.3",
+    "serverless-offline": "^6.1.4"
+  }
+}

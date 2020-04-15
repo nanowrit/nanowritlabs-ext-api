@@ -1,7 +1,7 @@
 {
-    "body": "{\"goal\":\"hello new goal\",\"conflict\":\"hello new conflict\",\"revelation\":\"hello new revelation\",\"praiseTheEnemy\":\"hello new praiseTheEnemy\",\"doOrDie\":\"hello new doOrDie\",\"crossThreshold\":\"hello new crossThreshold\",\"attachment\":\"hello.jpg\"}",
+    "body": "{\"goal\":\"hello new goal\",\"conflictField\":\"hello new conflict\",\"revelation\":\"hello new revelation\",\"praiseTheEnemy\":\"hello new praiseTheEnemy\",\"doOrDie\":\"hello new doOrDie\",\"crossThreshold\":\"hello new crossThreshold\",\"attachment\":\"hello.jpg\"}",
     "pathParameters": {
-      "id": "6c0bfc70-54da-11ea-b9dc-512f897591a4"
+      "id": "40342cd0-7c3a-11ea-b232-cb03d9e7e2e6"
     },
     "requestContext": {
       "identity": {

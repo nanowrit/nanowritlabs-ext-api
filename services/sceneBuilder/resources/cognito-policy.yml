@@ -21,4 +21,4 @@ Resources:
                   - Ref: ApiGatewayRestApi
                   - '/*'
       Roles:
-        - 'Fn::ImportValue': ExtCognitoAuthRole-${self:custom.resourcesStage}
+        - 'Fn::ImportValue': ExtNanowritlabsCognitoAuthRole-${self:custom.resourcesStage}

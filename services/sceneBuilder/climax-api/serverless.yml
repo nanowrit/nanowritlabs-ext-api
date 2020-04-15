@@ -1,4 +1,4 @@
-service: nanowritlabs-app-ext-sceneBuilder-climax-api
+service: nanowritlabs-ext-sb-climax-api
 
 plugins:
   - serverless-bundle
@@ -18,11 +18,11 @@ provider:
     apiGateway: true
     lambda: true
 
-  apiGateway:
-    restApiId:
-      'Fn::ImportValue': ${self:custom.stage}-ExtApiGatewayRestApiId
-    restApiRootResourceId:
-      'Fn::ImportValue': ${self:custom.stage}-ExtApiGatewayRestApiRootResourceId
+  # apiGateway:
+  #   restApiId:
+  #     'Fn::ImportValue': ${self:custom.stage}-ExtApiGatewayRestApiId
+  #   restApiRootResourceId:
+  #     'Fn::ImportValue': ${self:custom.stage}-ExtApiGatewayRestApiRootResourceId
   
   # These environment variables are made available to our functions
   # under process.env.
@@ -57,7 +57,7 @@ functions:
     handler: create.main
     events:
       - http:
-          path: climaxs
+          path: sceneBuilder/climaxs
           method: post
           cors: true
           authorizer: aws_iam
@@ -69,7 +69,7 @@ functions:
     handler: get.main
     events:
       - http:
-          path: climaxs/{id}
+          path: sceneBuilder/climaxs/{id}
           method: get
           cors: true
           authorizer: aws_iam
@@ -81,7 +81,7 @@ functions:
     handler: list.main
     events:
       - http:
-          path: climaxs
+          path: sceneBuilder/climaxs
           method: get
           cors: true
           authorizer: aws_iam
@@ -93,7 +93,7 @@ functions:
     handler: update.main
     events:
       - http:
-          path: climaxs/{id}
+          path: sceneBuilder/climaxs/{id}
           method: put
           cors: true
           authorizer: aws_iam
@@ -105,7 +105,7 @@ functions:
     handler: delete.main
     events:
       - http:
-          path: climaxs/{id}
+          path: sceneBuilder/climaxs/{id}
           method: delete
           cors: true
           authorizer: aws_iam

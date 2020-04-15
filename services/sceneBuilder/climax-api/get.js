@@ -12,7 +12,7 @@ export async function main(event, context) {
         climaxId: event.pathParameters.id
       }
     };
-  
+
     try {
       const result = await dynamoDbLib.call("get", params);
       if (result.Item) {

@@ -19,7 +19,7 @@ export async function main(event, context) {
         createdAt: Date.now()
       }
     };
-  
+
     try {
       await dynamoDbLib.call("put", params);
       return success(params.Item);

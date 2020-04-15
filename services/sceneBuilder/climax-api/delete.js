@@ -12,7 +12,7 @@ export async function main(event, context) {
         climaxId: event.pathParameters.id
       }
     };
-  
+
     try {
       await dynamoDbLib.call("delete", params);
       return success({ status: true });
