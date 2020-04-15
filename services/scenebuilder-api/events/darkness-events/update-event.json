@@ -1,0 +1,11 @@
+{
+    "body": "{\"goal\":\"hello new goal\",\"conflictField\":\"hello new conflictField\",\"ultimateDisaster\":\"hello new ultimateDisaster\",\"darkestMoment\":\"hello new darkestMoment\",\"oneChance\":\"hello new oneChance\",\"doAndDie\":\"hello new doAndDie\",\"attachment\":\"hello.jpg\"}",
+    "pathParameters": {
+      "id": "ee22b4d0-7cdd-11ea-adf1-c710c2915005"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

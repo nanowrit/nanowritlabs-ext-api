@@ -1,0 +1,349 @@
+service: nanowritlabs-ext-scenebuilder-api
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
+
+custom: ${file(../../serverless.common.yml):custom}
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: dev
+  region: us-west-2
+  tracing:
+    apiGateway: true
+    lambda: true
+
+  # These environment variables are made available to our functions
+  # under process.env.
+  environment:
+    stage: ${self:custom.stage}
+    resourcesStage: ${self:custom.resourcesStage}
+
+  iamRoleStatements:
+    - ${file(../../../serverless.common.yml):lambdaPolicyXRay}
+    - Effect: Allow
+      Action:
+        - dynamodb:DescribeTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      # Restrict our IAM role permissions to
+      # the specific tables for the stage
+      Resource:
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtBeginningsTableArn
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtClimaxsTableArn
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtDarknesssTableArn
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtFillersTableArn
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtMirrorsTableArn
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtRecommitmentsTableArn
+
+functions:
+  # Defines an HTTP API endpoint that calls the main function in create.js
+  # - path: url path is /beginnings
+  # - method: POST request
+  # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross
+  #     domain api call
+  # - authorizer: authenticate using the AWS IAM role
+  # Create functions for each table below this line:
+  create-climax:
+    handler: create-climax.main
+    events:
+      - http:
+          path: climaxs
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  create-recommitment:
+    handler: create-recommitment.main
+    events:
+      - http:
+          path: recommitments
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  create-filler:
+    handler: create-filler.main
+    events:
+      - http:
+          path: fillers
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  create-darkness:
+    handler: create-darkness.main
+    events:
+      - http:
+          path: darknesss
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  create-mirror:
+    handler: create-mirror.main
+    events:
+      - http:
+          path: mirrors
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  create-beginning:
+    handler: create-beginning.main
+    events:
+      - http:
+          path: beginnings
+          method: post
+          cors: true
+          authorizer: aws_iam
+
+  # Get functions for each table below this line:
+  get-climax:
+    handler: get-climax.main
+    events:
+      - http:
+          path: climaxs/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  get-recommitment:
+    handler: get-recommitment.main
+    events:
+      - http:
+          path: recommitments/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  get-filler:
+    handler: get-filler.main
+    events:
+      - http:
+          path: fillers/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  get-darkness:
+    handler: get-darkness.main
+    events:
+      - http:
+          path: darknesss/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  get-mirror:
+    handler: get-mirror.main
+    events:
+      - http:
+          path: mirrors/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  get-beginning:
+    handler: get-beginning.main
+    events:
+      - http:
+          path: beginnings/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
+  
+  # List functions for each table below this line:
+  list-climax:
+    handler: list-climax.main
+    events:
+      - http:
+          path: climaxs
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  list-recommitment:
+    handler: list-recommitment.main
+    events:
+      - http:
+          path: recommitments
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  list-filler:
+    handler: list-filler.main
+    events:
+      - http:
+          path: fillers
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  list-darkness:
+    handler: list-darkness.main
+    events:
+      - http:
+          path: darknesss
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  list-mirror:
+    handler: list-mirror.main
+    events:
+      - http:
+          path: mirrors
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  list-beginning:
+    handler: list-beginning.main
+    events:
+      - http:
+          path: beginnings
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+  # Update functions for each table below this line:
+  update-climax:
+    handler: update-climax.main
+    events:
+      - http:
+          path: climaxs/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  update-recommitment:
+    handler: update-recommitment.main
+    events:
+      - http:
+          path: recommitments/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  update-filler:
+    handler: update-filler.main
+    events:
+      - http:
+          path: fillers/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  update-darkness:
+    handler: update-darkness.main
+    events:
+      - http:
+          path: darknesss/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  update-mirror:
+    handler: update-mirror.main
+    events:
+      - http:
+          path: mirrors/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  update-beginning:
+    handler: update-beginning.main
+    events:
+      - http:
+          path: beginnings/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  # Delete functions for each table below this line:
+  delete-climax:
+    handler: delete-climax.main
+    events:
+      - http:
+          path: climaxs/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  delete-recommitment:
+    handler: delete-recommitment.main
+    events:
+      - http:
+          path: recommitments/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  delete-filler:
+    handler: delete-filler.main
+    events:
+      - http:
+          path: fillers/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  delete-darkness:
+    handler: delete-darkness.main
+    events:
+      - http:
+          path: darknesss/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  delete-mirror:
+    handler: delete-mirror.main
+    events:
+      - http:
+          path: mirrors/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  delete-beginning:
+    handler: delete-beginning.main
+    events:
+      - http:
+          path: beginnings/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+resources:
+  # API Gateway Errors
+  - ${file(../resources/api-gateway-errors.yml)}
+  # Cognito Identity Pool Policy
+  - ${file(../resources/cognito-policy.yml)}
+
+Outputs:
+  ApiGatewayRestApiId:
+    Value:
+      Ref: ApiGatewayRestApi
+    Export:
+      Name: ${self:custom.stage}-ExtApiGatewayRestApiId
+
+  ApiGatewayRestApiRootResourceId:
+    Value:
+       Fn::GetAtt:
+        - ApiGatewayRestApi
+        - RootResourceId 
+    Export:
+      Name: ${self:custom.stage}-ExtApiGatewayRestApiRootResourceId

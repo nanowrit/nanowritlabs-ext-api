@@ -1,0 +1,11 @@
+{
+    "body": "{\"goal\":\"hello new goal\",\"conflictField\":\"hello new conflictField\",\"disaster\":\"hello new disaster\",\"dilemma\":\"hello new dilemma\",\"decision\":\"hello new decision\",\"actionField\":\"hello new actionField\",\"attachment\":\"hello.jpg\"}",
+    "pathParameters": {
+      "id": "99e495e0-7cde-11ea-9930-2b56bd1c3523"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
