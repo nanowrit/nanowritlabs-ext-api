@@ -1,0 +1,12 @@
+{
+  "body": "{\"authorId\":\"4ed670ab-cfb4-4402-8336-06cf9c1e4bc6\",\"firstAppearedIn\":\"Weird Tales\",\"firstAppearedDate\":\"-1228150800000\",\"title\":\"The Tower of the Elephant\",\"content\":\"Verily I say unto you-- Torches flared murkily on the revels in the Maul, where the thieves of the east held carnival by night. In the Maul they could carouse and roar as they liked, for honest people shunned the quarters, and watchmen, well paid with stained coins, did not interfere with their sport. Along the crooked, unpaved streets with their heaps of refuse and sloppy puddles, drunken roisterers staggered, roaring. Steel glinted in the shadows where wolf preyed on wolf, and from the darkness rose the shrill laughter of women, and the sounds of scufflings and strugglings. Torchlight licked luridly from broken windows and wide-thrown doors, and out of those doors, stale smells of wine and rank sweaty bodies, clamor of drinking-jacks and fists hammered on rough tables, snatches of obscene songs, rushed like a blow in the face.\"}",
+    "pathParameters": {
+      "authorId": "4ed670ab-cfb4-4402-8336-06cf9c1e4bc6",
+      "storyId": "69c4b2de-f25c-4572-8eb3-0fd7adb625cc"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

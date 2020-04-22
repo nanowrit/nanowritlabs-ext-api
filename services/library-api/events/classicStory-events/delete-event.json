@@ -1,0 +1,11 @@
+{
+    "pathParameters": {
+      "authorId": "4ed670ab-cfb4-4402-8336-06cf9c1e4bc6",
+      "storyId": "51be3b99-ae61-4a7e-af5d-3c215aa18dcc"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

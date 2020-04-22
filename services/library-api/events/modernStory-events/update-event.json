@@ -1,0 +1,12 @@
+{
+  "body": "{\"firstAppearedIn\":\"NA\",\"firstAppearedDate\":\"NA\",\"title\":\"Star Dragon\",\"content\":\"Unlike most first-time visitors entering the world headquarters of Biolathe, Inc., Dr. Samuel Fisher didn't pause at the moist cloying air that moved across the building’s threshold like breath. If anything, his pace increased; he threw his shoulders forward and his streaker-clad feet rushed as if to prevent a fall, sinking into the plush rose ruglings with each step. Unlike the sunlit diamond and gold, seemingly mandatory in corporate buildings, this lobby throbbed pink and organic. The entire building was alive. Despite the omnipresence of biotechnology, walking inside it rather than sitting on it still made most hesitate.\"}",
+    "pathParameters": {
+      "authorId": "f3800ee6-7afc-49ee-8d59-c08d593bf7f1",
+      "storyId": "8bc602d6-6677-4e68-8926-649df384c745"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

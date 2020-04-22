@@ -1,0 +1,11 @@
+{
+  "body": "{\"category\":\"classic\",\"firstName\":\"Edgar\",\"middleName\":\"Rice\",\"lastName\":\"Burroughs\",\"born\":\"-2976890400000\", \"died\": \"-624477600000\"}",
+    "pathParameters": {
+      "authorId": "7f16c899-776d-49b6-ae06-00253f91c2e1"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

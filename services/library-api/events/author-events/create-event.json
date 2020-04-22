@@ -1,0 +1,8 @@
+{
+  "body": "{\"category\":\"classic\",\"firstName\":\"Robert\",\"middleName\":\"E.\",\"lastName\":\"Howard\",\"born\":\"-2017846800000\", \"died\": \"-1058983200000\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

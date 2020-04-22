@@ -1,0 +1,8 @@
+{
+  "body": "{\"authorId\":\"f3800ee6-7afc-49ee-8d59-c08d593bf7f1\",\"firstAppearedIn\":\"NA\",\"firstAppearedDate\":\"NA\",\"title\":\"For the Win\",\"content\":\"In the game, Matthew's characters killed monsters, as they did every single night. But tonight, as Matthew thoughtfully chopsticked a dumpling out of the styrofoam clamshell, dipped it in the red hot sauce and popped it into his mouth, his little squadron did something extraordinary: they began to win. There were eight monitors on his desk, arranged in two ranks of four, the top row supported on a shelf he'd bought from an old lady scrap dealer in front of the Dongmen market. She'd also sold him the monitors, shaking her head at his idiocy: at a time when everyone wanted giant, 30 screens, why did he want this collection of dinky little 9 displays?\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

@@ -1,0 +1,11 @@
+{
+  "body": "{\"authorId\":\"4ed670ab-cfb4-4402-8336-06cf9c1e4bc6\",\"firstAppearedIn\":\"cnn\",\"firstAppearedDate\":\"-1228150800000\",\"title\":\"Old human cells return to a more youthful and vigorous state after being induced to briefly express a panel of proteins involved in embryonic development. The finding may have implications for aging research.\",\"content\":\"DARPA, the Defense Advanced Research Projects Agency that’s responsible for developing emerging technologies for the U.S. military, is building a new high-tech spacecraft — and it’s armed. 'And those robot arms have interchangeable tools that allow a variety of different operations that include grasping onto what we call the client spacecraft [and performing repair tasks.]'Part robot handyman, part tow truck Should all go to plan, it will mean that, for the first time in history, it’s possible to carry out 'dexterous manipulation' tasks to help fix satellites in geosynchronous orbit.\"}",
+    "pathParameters": {
+      "storySeedId": "d4142aa9-4a10-4bde-b238-d60c2223a094"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
