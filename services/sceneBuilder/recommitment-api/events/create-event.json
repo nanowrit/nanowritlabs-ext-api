@@ -1,8 +1,0 @@
-{
-    "body": "{\"goal\":\"hello goal\",\"conflictField\":\"hello conflictField\",\"revelation\":\"hello revelation\",\"praiseTheEnemy\":\"hello praiseTheEnemy\",\"doOrDie\":\"hello doOrDie\",\"crossThreshold\":\"hello crossThreshold\",\"attachment\":\"hello.jpg\"}",
-    "requestContext": {
-      "identity": {
-        "cognitoIdentityId": "USER-SUB-1234"
-      }
-    }
-  }

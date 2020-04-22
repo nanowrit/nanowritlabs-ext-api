@@ -25,7 +25,7 @@ provider:
     resourcesStage: ${self:custom.resourcesStage}
 
   iamRoleStatements:
-    - ${file(../../../serverless.common.yml):lambdaPolicyXRay}
+    - ${file(../../serverless.common.yml):lambdaPolicyXRay}
     - Effect: Allow
       Action:
         - dynamodb:DescribeTable
