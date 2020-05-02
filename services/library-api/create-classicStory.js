@@ -9,7 +9,7 @@ export async function main(event, context) {
     TableName: "ext-classicStories",
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
-      storyId: uuid.v4(),
+      id: uuid.v4(),
       authorId: data.authorId,
       firstAppearedIn: data.firstAppearedIn,
       firstAppearedDate: data.firstAppearedDate,

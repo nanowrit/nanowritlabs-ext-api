@@ -10,7 +10,7 @@ export async function main(event, context) {
     // category refers to modern, classic, or storySeed
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
-      authorId: uuid.v4(),
+      id: uuid.v4(),
       category: data.category,
       firstName: data.firstName,
       middleName: data.middleName,

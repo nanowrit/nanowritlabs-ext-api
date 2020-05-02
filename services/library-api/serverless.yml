@@ -94,7 +94,7 @@ functions:
           path: classicstorys/{id}
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   get-modernStory:
     handler: get-modernStory.main
@@ -121,7 +121,7 @@ functions:
           path: authors/{id}
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   # List functions for each table below this line:
   list-classicStory:
@@ -131,7 +131,7 @@ functions:
           path: classicstorys
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   list-modernStory:
     handler: list-modernStory.main
@@ -140,7 +140,7 @@ functions:
           path: modernstorys
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   list-storySeed:
     handler: list-storySeed.main
@@ -149,7 +149,7 @@ functions:
           path: storyseeds
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   list-author:
     handler: list-author.main
@@ -158,7 +158,7 @@ functions:
           path: authors
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   # Update functions for each table below this line:
   update-classicStory:
