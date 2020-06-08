@@ -1,0 +1,23 @@
+{
+  "name": "patreon-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "patreon.js",
+  "eslintConfig": {
+    "rules": {
+      "no-undef": 0,
+      "no-unused-vars": 0
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "patreon": "^0.4.1"
+  }
+}

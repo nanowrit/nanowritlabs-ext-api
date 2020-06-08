@@ -1,0 +1,8 @@
+{
+    "body": "{\"protagonist\":\"hello new protagonist\",\"situation\":\"hello new situation\",\"objective\":\"hello new objective\",\"opponent\":\"hello opponent\",\"disaster\":\"hello disaster\",\"theme\":\"hello theme\",\"dramaticStatement\":\"hello dramaticStatement\",\"dramaticQuestion\":\"hello dramaticQuestion\",\"attachment\":\"hello.jpg\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

@@ -3,10 +3,14 @@ const resourcesStage = process.env.resourcesStage;
 
 const stageConfigs = {
   dev: {
-    stripeKeyName: "/stripeSecretKey/test"
+    stripeKeyName: "/stripeSecretKey/test",
+    patreonKeyName: "/patreonSecretKey/live",
+    patreonClientIdName: "/patreonClientId/live"
   },
   prod: {
-    stripeKeyName: "/stripeSecretKey/live"
+    stripeKeyName: "/stripeSecretKey/live",
+    patreonKeyName: "/patreonSecretKey/live",
+    patreonClientIdName: "/patreonClientId/live"
   }
 };
 

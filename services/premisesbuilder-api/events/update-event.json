@@ -1,0 +1,11 @@
+{
+    "body": "{\"protagonist\":\"hello new new protagonist\",\"situation\":\"hello even newer situation\",\"objective\":\"hello same old objective\",\"opponent\":\"hello opponent\",\"disaster\":\"hello disaster\",\"theme\":\"hello theme\",\"dramaticStatement\":\"hello dramaticStatement\",\"dramaticQuestion\":\"hello dramaticQuestion\",\"attachment\":\"hello.jpg\"}",
+    "pathParameters": {
+      "id": "21aa815c-f8f1-4be8-ac2f-913a84831094"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }
