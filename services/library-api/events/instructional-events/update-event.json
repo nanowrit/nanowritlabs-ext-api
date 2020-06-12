@@ -1,0 +1,11 @@
+{
+  "body": "{\"authorId\":\"4ed670ab-cfb4-4402-8336-06cf9c1e4bc6\",\"firstAppearedIn\":\"The Writer\",\"firstAppearedDate\":\"-1262304000\",\"title\":\"Writing The Fantastic Story\",\"content\":\"So this, the problem of successfully wooing the Muse, is the one which I find most difficult of solution. I have a profound admiration for writers who can sit down at their desks, day after day, and, without fail, bat out two or three thousand words of good, salable material in two or three hours. Most of them will tell you this is the result of practice—of continuous trying. But I've been trying for ten years, and selling stories for eight, and today my Muse is as obstinate and capricious as ever.\"}",
+    "pathParameters": {
+      "id": "93dd35cf-0c8c-46a1-9920-00b8f55d112a"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

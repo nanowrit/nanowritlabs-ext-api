@@ -1,0 +1,8 @@
+{
+    "body": "{\"authorId\":\"34c5605f-6467-4125-a782-5a15c2503aef\",\"firstAppearedIn\":\"The Writer\",\"firstAppearedDate\":\"-1228150800000\",\"title\":\"WRITING, with me, is a semi-subjective process. I mean by this that I find it necessary, at times, to wait for that temperamental and elusive entity, my Muse, to cooperate with me. Every day I try to write, and I mean try. But some days I produce only a few hundred words fit for nothing but filing in the wastebasket. And on the other hand I have, in a single day, produced six or seven thousand words of marketable copy.\"}",
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

@@ -8,7 +8,7 @@ export async function main(event, context) {
       // - 'authorId': path parameter
       // - 'storyId': path parameter
       Key: {
-        storySeedId: event.pathParameters.storySeedId,
+        id: event.pathParameters.id,
       }
     };
 

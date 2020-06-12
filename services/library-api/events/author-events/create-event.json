@@ -1,5 +1,5 @@
 {
-  "body": "{\"category\":\"classic\",\"firstName\":\"Robert\",\"middleName\":\"E.\",\"lastName\":\"Howard\",\"born\":\"-2017846800000\", \"died\": \"-1058983200000\"}",
+  "body": "{\"category\":\"classic\",\"firstName\":\"Otis\",\"middleName\":\"Adelbert\",\"lastName\":\"Kline\",\"born\":\"-2477347200\", \"died\": \"-731808000\"}",
     "requestContext": {
       "identity": {
         "cognitoIdentityId": "USER-SUB-1234"

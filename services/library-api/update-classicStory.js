@@ -10,7 +10,7 @@ export async function main(event, context) {
     // - 'storyId': path parameter
     Key: {
       // userId: event.requestContext.identity.cognitoIdentityId,
-      storyId: event.pathParameters.storyId
+      id: event.pathParameters.id
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression

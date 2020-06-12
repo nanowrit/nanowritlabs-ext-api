@@ -42,6 +42,7 @@ provider:
         - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtModernStoriesTableArn
         - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtStorySeedsTableArn
         - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtAuthorsTableArn
+        - 'Fn::ImportValue': ${self:custom.resourcesStage}-ExtInstructionalsTableArn
 
 functions:
   # Defines an HTTP API endpoint that calls the main function in create.js
@@ -86,6 +87,14 @@ functions:
           method: post
           cors: true
 
+  create-instructional:
+    handler: create-instructional.main
+    events:
+      - http:
+          path: instructionals
+          method: post
+          cors: true
+
   # Get functions for each table below this line:
   get-classicStory:
     handler: get-classicStory.main
@@ -103,7 +112,7 @@ functions:
           path: modernstorys/{id}
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   get-storySeed:
     handler: get-storySeed.main
@@ -112,13 +121,22 @@ functions:
           path: storyseeds/{id}
           method: get
           cors: true
-          authorizer: aws_iam
+          # authorizer: aws_iam
 
   get-author:
     handler: get-author.main
     events:
       - http:
           path: authors/{id}
+          method: get
+          cors: true
+          # authorizer: aws_iam
+
+  get-instructional:
+    handler: get-instructional.main
+    events:
+      - http:
+          path: instructionals/{id}
           method: get
           cors: true
           # authorizer: aws_iam
@@ -160,6 +178,15 @@ functions:
           cors: true
           # authorizer: aws_iam
 
+  list-instructional:
+    handler: list-instructional.main
+    events:
+      - http:
+          path: instructionals
+          method: get
+          cors: true
+          # authorizer: aws_iam
+
   # Update functions for each table below this line:
   update-classicStory:
     handler: update-classicStory.main
@@ -197,6 +224,15 @@ functions:
           cors: true
           authorizer: aws_iam
 
+  update-instructional:
+    handler: update-instructional.main
+    events:
+      - http:
+          path: instructionals/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
   # Delete functions for each table below this line:
   delete-classicStory:
     handler: delete-classicStory.main
@@ -230,6 +266,15 @@ functions:
     events:
       - http:
           path: authors/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
+
+  delete-instructional:
+    handler: delete-instructional.main
+    events:
+      - http:
+          path: instructionals/{id}
           method: delete
           cors: true
           authorizer: aws_iam
