@@ -9,8 +9,7 @@ export async function main(event, context) {
     // - 'authorId': key from the author table; path paramter
     // - 'storyId': path parameter
     Key: {
-      authorId: event.pathParameters.authorId,
-      storyId: event.pathParameters.storyId
+      id: event.pathParameters.id
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression
